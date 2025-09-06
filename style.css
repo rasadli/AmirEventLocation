@@ -63,6 +63,7 @@ section p {
     line-height: 1.6;
 }
 
+/* Home Section */
 .home {
     background: url('images/photo_1.jpg') no-repeat center center/cover;
     min-height: 100vh;
@@ -72,13 +73,67 @@ section p {
     align-items: center;
     text-align: center;
     position: relative;
-}
-
-.home h1 {
-    font-size: 3em;
     color: var(--gold);
     font-family: 'Playfair Display', serif;
 }
+
+/* Overlay for readability */
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* dark semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Heading and paragraph above overlay */
+.home h1,
+.home p,
+.home a {
+    position: relative;
+    z-index: 2;
+    margin: 10px 0;
+}
+
+/* Heading */
+.home h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+}
+
+/* Paragraph */
+.home p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Button */
+.home .btn {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.home .btn:hover {
+    background-color: #fff;
+    color: var(--gold);
+}
+
 
 .btn {
     display: inline-block;
