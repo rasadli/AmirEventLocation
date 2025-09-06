@@ -64,12 +64,14 @@ section p {
 }
 
 .home {
-    background: url('logo.jpg') no-repeat center/150px;
+    background: url('images/photo_1.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 .home h1 {
