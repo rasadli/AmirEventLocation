@@ -505,7 +505,7 @@ footer p.copyright {
     }
 
     .home {
-        background-position: top center;
+        background-position: top;
         min-height: 100vh;
         padding-top: 150px;
     }
