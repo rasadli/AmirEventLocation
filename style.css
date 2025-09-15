@@ -85,7 +85,7 @@ section p {
 
 /* Home Section */
 .home {
-    background: url('images/photo_1.jpg') no-repeat center center/cover;
+    background: url('images/home_bg.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -302,7 +302,7 @@ h2::after {
     color: var(--gold);
 }
 
-.contact ul.icon-list li a{
+.contact ul.icon-list li a {
     color: var(--gold) !important;
 }
 
@@ -488,7 +488,7 @@ footer p.copyright {
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 15px 30px;
+        padding: 15px 0px;
         justify-content: space-around;
     }
 
@@ -500,4 +500,13 @@ footer p.copyright {
         margin: 20px 0px;
     }
 
+    .navbar nav a {
+        margin: 0 5px;
+    }
+
+    .home {
+        background-position: top center;
+        min-height: 100vh;
+        padding-top: 150px;
+    }
 }
